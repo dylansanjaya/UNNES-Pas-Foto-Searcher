@@ -15,7 +15,6 @@ import DefaultIMG from '@/assets/default.jpg'
 function ImageChange() {
   const [nim, setNim] = useState('');
   const [imageUrl, setImageUrl] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,16 +26,13 @@ function ImageChange() {
       if (imageFormat === 'aspx') {
         // If the format is 'aspx', set a fallback image URL
         setImageUrl('');
-        setErrorMessage(`Pas foto dengan NIM: ${nim} tidak dapat ditemukan`);
       } else {
         // Otherwise, set the URL as is
         setImageUrl(imageUrl);
-        setErrorMessage('');
       }
     } else {
       // If input is empty, use a default URL
       setImageUrl(DefaultIMG);
-      setErrorMessage('');
     }
   };
 

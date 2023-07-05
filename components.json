@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "D:\\VSCODE Projects\\UNNES-Pas-Foto-Searcher\\tailwind.config.js",
+    "css": "D:\\VSCODE Projects\\UNNES-Pas-Foto-Searcher\\src\\index.css",
+    "baseColor": "neutral",
+    "cssVariables": true
+  },
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils"
+  }
+}
